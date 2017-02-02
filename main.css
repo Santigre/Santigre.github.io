@@ -1,0 +1,46 @@
+/*-----------------------------------------
+Sets background color
+------------------------------------------*/
+body{
+    background: #777;
+}
+/*------------------------------------------------------------------------------------------
+The container is white and takes up the whole screen. Cant see the body backbground color. 
+Want it like this for now. Might change later. Without left and top there is a little bit of
+grey showing.
+---------------------------------------------------------------------------------------------*/
+.container{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    position: absolute;
+}
+/*-----------------------------------------------------------------------------------------
+Says the page your in. If your home it says home. If its intrest page says interest or w.e
+-----------------------------------------------------------------------------------------*/
+header{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#nav {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#lst{
+    display: inline-flex;
+    
+}
+
+.btn{
+    background-color: #ffff70;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+}
