@@ -35,7 +35,7 @@ header{
 -----------------------------------------------------------------------*/
 #nav {
     margin-top: -3px;
-    margin-left: 31%;
+    align-content: center;
     padding: 0;
     text-align: center;
     position: absolute;
@@ -50,7 +50,7 @@ header{
     color: #fff;
     background-color:#000;
     width: 100px;
-    padding: 10px 30px 10px 30px;
+    padding: 0;
 }
 #btn a:visited{
     color:#fff;
