@@ -1,5 +1,5 @@
 html {
-	font-family: Quicksand,sans-serif;
+	font-family: sans-serif;
 }
 
 /*-----------------------------------------
@@ -9,54 +9,38 @@ body{
     background: #777;
 
 }
-/*------------------------------------------------------------------------------------------
-The container is white and takes up the whole screen. Cant see the body backbground color. 
-Want it like this for now. Might change later. Without left and top there is a little bit of
-grey showing.
----------------------------------------------------------------------------------------------*/
+
 .container{
-    background-image: url("../pictures/fade_away.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-	background-attachment: fixed;
-    height: auto;
-    width: 100%;
 	margin-left: -10px;
 	margin-top: -10px;
-    position: absolute;
     
 }
 /*-----------------------------------------------------------------------------------------
 Says the page your in. If your home it says home. If its intrest page says interest or w.e
 -----------------------------------------------------------------------------------------*/
-header{
-	padding:0; 
-    color: #fff;
-    background-color: #000;
-	margin-top: -19px;
-    text-align: center;
-	z-index: 6;
-	
-
-}
 /*----------------------------------------------------------------------
 
 -----------------------------------------------------------------------*/
 #nav {
-
-	margin-left: 100px;
+	background-color: #000;
+	color: #fff;
+	height: 55px;
 	width: 100%;
-    padding: 0;
-	margin-top: -29px;
-	margin-left: 0%; /*---some reasone it puts a space at the right of the webpage without this.--*/
-    text-align: center;
+	margin-top: -1%;
     position: fixed;
-	z-index: 5;
+	z-index: 1;
 
 }
+#name{
+	padding-left: 2.7%;
+}
 #btn{ 
+	width: auto;
     list-style: none;
-    display: inline-flex;
+    display: flex;
+	position: fixed;
+	padding-left: 33.3%;
+	top: 0px;
 
 }
 
@@ -64,8 +48,7 @@ header{
     text-decoration: none;
     color: #fff;
     background-color:#000;
-    width: 100px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 40px 10px 40px;
 }
 #btn a:visited{
     color:#fff;
@@ -75,14 +58,19 @@ header{
     background-color: #fff;
     cursor: pointer;
 }
+
+#picture {
+   width: 100%;
+   height: 80%;
+}
+
+#picture, img {
+    display: block;
+    width: 100%;
+}
 #content{
 	background-color: #000;
-	border-width: 25px;
-	border-color: fff;
-	height: auto;
-	width: 80%;
-	margin-left: 10%;
-	opacity: .65;
+	width: 100%;
 }
 p{
 	color: #fff;
