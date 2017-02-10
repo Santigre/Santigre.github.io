@@ -11,9 +11,8 @@ body{
 }
 
 .container{
-	margin-left: -10px;
-	margin-top: -10px;
-    
+	margin: -8px;
+    position: : absolute; 
 }
 /*-----------------------------------------------------------------------------------------
 Says the page your in. If your home it says home. If its intrest page says interest or w.e
@@ -26,7 +25,6 @@ Says the page your in. If your home it says home. If its intrest page says inter
 	color: #fff;
 	height: 55px;
 	width: 100%;
-	margin-top: -1%;
     position: fixed;
 	z-index: 1;
 
@@ -39,6 +37,7 @@ Says the page your in. If your home it says home. If its intrest page says inter
     list-style: none;
     display: flex;
 	position: fixed;
+    padding-top: .25%;
 	padding-left: 33.3%;
 	top: 0px;
 
@@ -60,8 +59,7 @@ Says the page your in. If your home it says home. If its intrest page says inter
 }
 
 #picture {
-   width: 100%;
-   height: 80%;
+    height: 80%;
 }
 
 #picture, img {
@@ -70,8 +68,18 @@ Says the page your in. If your home it says home. If its intrest page says inter
 }
 #content{
 	background-color: #000;
-	width: 100%;
+	width: auto;
+    padding: 1%;
 }
 p{
 	color: #fff;
+}
+
+footer{
+    margin-bottom: -1%;
+    padding: .5%;
+    text-align: center;
+    background-color: #777;
+    color: #fff;
+    
 }
