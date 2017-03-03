@@ -32,7 +32,7 @@ Says the page your in. If your home it says home. If its intrest page says inter
 
 }
 #Name {
-	text-align: left;
+	position: float-left;
 }
 #btn{ 
 	width: auto;
