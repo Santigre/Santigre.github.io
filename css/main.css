@@ -13,10 +13,10 @@ html,body{
 
 nav{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    opacity: .90;
-    background: #000;
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 2.5%;
+    z-index: 1;
 }
 
 
@@ -39,8 +39,6 @@ p{ /* might have to change p if there is problem */
 /* Menu drop down*/
 .sub-menu-parent{
     position: relative;
-    float: right;
-    margin-right: 1px;
 }
 
 .nav-links{
@@ -70,7 +68,7 @@ p{ /* might have to change p if there is problem */
 
 a{
     display: block;
-    background: black; 
+    background: #191919; 
     color: #ffff;
     padding: 8px 16px;
     text-decoration: none;
@@ -79,35 +77,45 @@ a{
 }
 
 a:hover {
-    background: #0000;
-    color: dimgrey;
+    color: #cfcfcf;
     text-decoration: none;
 }
 
 .nav-links{
-    background: #000;
+    background: #191919;
 }
 
 #parallax1{
     background-image: url(/pictures/image1.JPG);
-    height: 100%;
-    margin: 0;
-    margin-top: -27.4px;
+    height: 90%;
+    width: 95%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
     padding: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
     
     
 }
 
 #intro-content{
+    background-color: #000;
     color: #fff;
-    height: auto;
+    opacity: .8;
+    height: 100%;
     text-align: center;
     font-size: 130%;
-    vertical-align: middle;
+    vertical-align: middle;1
+}
+
+
+#intro-content h1{
+    margin: 0;
+    opacity: 2;
+    padding-top: 10%;
 }
 
 
