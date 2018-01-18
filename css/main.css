@@ -23,8 +23,8 @@ nav{
 li{
     float: left;
 }
-/*Title*/
-p{ /* might have to change p if there is problem */
+/*Title
+p{ might have to change p if there is problem 
     font-size: 18px;
     font: Bookman;
     margin: 8px;
@@ -34,9 +34,9 @@ p{ /* might have to change p if there is problem */
     display: inline-block;
     color: white;
 }
-/* Title End */
-
-/* Menu drop down*/
+ Title End 
+*/
+/*Menu drop down*/
 .sub-menu-parent{
     position: relative;
 }
@@ -65,6 +65,8 @@ p{ /* might have to change p if there is problem */
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be  visible while the other styles transition */
 }
+
+/*menu dropdown end */
 
 a{
     display: block;
