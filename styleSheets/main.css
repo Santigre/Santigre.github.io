@@ -84,14 +84,13 @@ p {
 /* End of About me style*/
 
 
-/*#loginDemo {
-    background: url(../images/loginDemo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 250px;
-    height: 250px;
-    z-index: -1;
-}*/
+/* Start of Projects */
+
+#Projects{
+    border-bottom: solid black;
+}
+
+/* End of Projects */
 
 /* Start of Contact style*/
 
