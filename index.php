@@ -1,7 +1,25 @@
-﻿<!DOCTYPE html>
+﻿<?php
+if(isset($_POST["submit"])) {
+	$name=$_POST["name"];
+	$subject=$_POST["subject"]
+	$emailFrom=$_POST["mail"];
+	$message=$_POST["message"];
+
+    $recipient="beltran.santiago1@gmail.com";
+	$headers ="From: ".$emailFrom;
+	$txt = "You have received an email from ".$name.".\n\n"
+
+	mail($recipient, $subject, $txt, $headers);
+
+	header(Location: index.php?mailsent);
+}
+?>
+
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Santiago Beltran Eportfolio</title>
         <link rel="stylesheet" href="styleSheets/main.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -72,7 +90,7 @@
             <div id="Contact">
                 <h1>Contact</h1>
                 <div class="container" id="formHolder">
-                    <form method="post" action="mailto:Oruga.95@hotmail.com">
+                    <form method="post" action="index.php">
                         <label for="fname">Full name</label>
                         <input type="text" name="name" placeholder="Full name" />
 
@@ -85,7 +103,7 @@
                         <label for="message">Massage</label>
                         <textarea name="message" style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit"/>
                     </form>
                 </div>
             </div>
