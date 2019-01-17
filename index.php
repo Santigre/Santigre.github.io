@@ -1,21 +1,4 @@
-﻿<?php
-if(isset($_POST["submit"])) {
-	$name=$_POST["name"];
-	$subject=$_POST["subject"];
-	$emailFrom=$_POST["mail"];
-	$message=$_POST["message"];
-
-    $recipient="Oruga.95@hotmail.com";
-	$headers ="From: ".$emailFrom;
-	$txt = "You have received an email from ".$name.".\n\n".$message;
-
-	mail($recipient, $subject, $txt, $headers);
-
-	header("Location: index.php?mailsent");
-}
-?>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -90,7 +73,7 @@ if(isset($_POST["submit"])) {
             <div id="Contact">
                 <h1>Contact</h1>
                 <div class="container" id="formHolder">
-                    <form method="post" action="index.php">
+                    <form class="contact-form" method="post" action="contact.php">
                         <label for="fname">Full name</label>
                         <input type="text" name="name" placeholder="Full name" />
 
@@ -103,7 +86,7 @@ if(isset($_POST["submit"])) {
                         <label for="message">Massage</label>
                         <textarea name="message" style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit"/>
+                        <button type="submit" name="submit"> Send Mail </button>
                     </form>
                 </div>
             </div>
