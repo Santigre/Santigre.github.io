@@ -1,4 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<?php
+if(isset($_POST["submit"])) {
+	$name=$_POST["name"];
+	$subject=$_POST["subject"]
+	$emailFrom=$_POST["mail"];
+	$message=$_POST["message"];
+
+    $recipient="beltran.santiago1@gmail.com";
+	$headers ="From: ".$emailFrom;
+	$txt = "You have received an email from ".$name.".\n\n"
+
+	mail($recipient, $subject, $txt, $headers);
+
+	header(Location: index.php?mailsent);
+}
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -17,7 +34,7 @@
                 <div class="navbar-header col-3">
                     <a class="navbar-brand text-white" href="#">Santiago Beltran</a>
                 </div>
-                <ul class="row col-sm-3 col-md-8 col-lg-4" >
+                <ul class="row col-sm-3 col-md-8 col-lg-4">
                     <li class="col"><a href="#AboutMe" style="text-decoration: none">About Me</a></li>
                     <li class="col"><a href="#Projects" style="text-decoration: none">Projects</a></li>
                     <li class="col"><a href="#Contact" style="text-decoration: none">Contact</a></li>
@@ -37,7 +54,7 @@
     </div>
 
 
-        <!-- Make changes to divs later to add more divercity to each section -->
+    <!-- Make changes to divs later to add more divercity to each section -->
     <div class="container">
         <div id="AboutMe">
             <h2>Hello I am Santiago Beltran and I am an aspiring Software Devolper</h2>
@@ -86,7 +103,7 @@
                     <label for="message">Massage</label>
                     <textarea name="message" style="height:200px"></textarea>
 
-                    <button type="submit" name="submit" />
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         </div>
