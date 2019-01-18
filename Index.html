@@ -73,7 +73,7 @@
             <div id="Contact">
                 <h1>Contact</h1>
                 <div class="container" id="formHolder">
-                    <form method="post" action="contact.php">
+                    <form method="post" name="emailform" action="contact.php">
                         <label for="fname">Full name</label>
                         <input type="text" name="name" placeholder="Full name" />
 
@@ -90,7 +90,7 @@
                     </form>
                     <script language="JavaScript">
                     // Code for validating the form
-                    var frmvalidator  = new Validator("myemailform");
+                    var frmvalidator  = new Validator("emailform");
                     frmvalidator.addValidation("name","req","Please provide your name"); 
                     frmvalidator.addValidation("email","req","Please provide your email"); 
                     frmvalidator.addValidation("email","email","Please enter a valid email address"); 
