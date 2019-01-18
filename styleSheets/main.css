@@ -24,13 +24,13 @@ li {
     list-style-type: none;
 }
 
-.navbar a{
+.navbar a {
     color: white;
 }
 
-.navbar a:hover {
-    color: #808080;
-}
+    .navbar a:hover {
+        color: #808080;
+    }
 
 /* End of NavBar style*/
 
@@ -50,31 +50,31 @@ li {
 }
 
 
-.banner h1 {
-    float: right;
-    padding-top: 4em;
-    padding-right: 5em;
-    color: white;
-    text-shadow: 2px 2px #333;
-}
+    .banner h1 {
+        float: right;
+        padding-top: 4em;
+        padding-right: 5em;
+        color: white;
+        text-shadow: 2px 2px #333;
+    }
 
 /* End of banner*/
 
 /* Start of about me  */
-#portrait{
+#portrait {
     background: url(../images/me.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     width: 200px;
     height: 225px;
     z-index: -1;
-
 }
 
 p {
     font-size: 18px;
     text-indent: 40px;
 }
+
 #AboutMe {
     padding-top: 750px;
     border-bottom-style: solid;
@@ -86,7 +86,7 @@ p {
 
 /* Start of Projects */
 
-#Projects{
+#Projects {
     border-bottom: solid black;
 }
 
@@ -114,7 +114,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: dimgray;
+        background-color: dimgray;
 }
 
 #formHolder {
